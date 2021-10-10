@@ -17,7 +17,7 @@ npm install
     2. set `API_KEY` to your node provider api key, i.e. `12345` -- it's most likely a subset of the API_URL
     3. set `CONTRACT_ADDRESS` to the address you want to check out, i.e. `0x0cE87f77B1d83dF522AE96AF9Cf810B16AB0942B`
 
-3. run the `interact.js` script with: `npx hardhat run interact.js --network mainnet`
+3. run the `interact.js` script with: `npx hardhat run interact.js`
 
 you'll see some output that looks like this:
 

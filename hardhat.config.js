@@ -9,7 +9,7 @@ const { API_URL } = process.env;
 
 module.exports = {
    solidity: "0.7.3",
-   defaultNetwork: "ropsten",
+   defaultNetwork: "mainnet",
    networks: {
       mainnet: {
          url: API_URL
