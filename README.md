@@ -10,6 +10,8 @@ Well, you've come to the right place. Here's a script to print out your NFT's to
 npm install
 ```
 
+2. if you don't already have a node provider account, set one up at https://www.alchemy.com/ for free
+
 2. set your configs by renaming `.env-placeholder` to `.env` and then:
     1. set `API_URL` to your node provider URL, i.e. `https://eth-mainnet.alchemyapi.io/v2/12345`, make sure network is set to mainnet for public NFT projects.
     2. set `API_KEY` to your node provider api key, i.e. `12345` -- it's most likely a subset of the API_URL
