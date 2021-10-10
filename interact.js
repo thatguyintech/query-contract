@@ -34,19 +34,6 @@ const contractAbi = JSON.parse(`[
         ],
         "stateMutability": "view",
         "type": "function"
-    },
-    {
-        "inputs": [],
-        "name": "baseTokenURI",
-        "outputs": [
-            {
-                "internalType": "string",
-                "name": "",
-                "type": "string"
-            }
-        ],
-        "stateMutability": "view",
-        "type": "function"
     }
 ]`);
 
@@ -59,9 +46,6 @@ async function main() {
 
     const uri = await contract.tokenURI(15);
     console.log("token uri", uri);
-
-    const baseTokenUri = await contract.baseTokenURI();
-    console.log("baseTokenUri", baseTokenUri);
 }
 
 main();
