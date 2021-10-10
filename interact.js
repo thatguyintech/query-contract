@@ -1,5 +1,6 @@
 const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
 const API_KEY = process.env.API_KEY;
+const TOKEN_ID = process.env.TOKEN_ID;
 const { ethers } = require("hardhat");
 
 const contractAbi = JSON.parse(`[
@@ -44,7 +45,7 @@ async function main() {
     const name= await contract.name();
     console.log("contract name: ", name);
 
-    const uri = await contract.tokenURI(15);
+    const uri = await contract.tokenURI(TOKEN_ID);
     console.log("token uri", uri);
 }
 
