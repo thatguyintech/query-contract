@@ -38,11 +38,11 @@ const contractAbi = JSON.parse(`[
     }
 ]`);
 
-const provider = new ethers.providers.AlchemyProvider(network="mainnet", apiKey = API_KEY);
+const provider = new ethers.providers.AlchemyProvider(network = "mainnet", apiKey = API_KEY);
 const contract = new ethers.Contract(CONTRACT_ADDRESS, contractAbi, provider);
 
 async function main() {
-    const name= await contract.name();
+    const name = await contract.name();
     console.log("contract name: ", name);
 
     const uri = await contract.tokenURI(TOKEN_ID);
